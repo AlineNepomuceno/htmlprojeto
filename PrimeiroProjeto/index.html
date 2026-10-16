@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Primeiro Projeto </title>
+    </head>
+    <body>
+        <h1> Introdução ao <strong> HTML</strong><sup>*</sup></h1>
+        <hr/>
+        <h3><i>Índice</i> </h3>
+        <ul style="display: flex; gap: 30px;">
+            <li><a href="#fundamento">Fundamento Html</a></li>
+            <li><a href="#estrutura">Estrutura Básica</a></li>
+            <li><a href="#tags">Principais Tags</a></li>
+            <li><a href="#atributo">Atributos das Tags</a></li>
+            <li><a href="#texto">Textos</a></li>
+            <li><a href="#lista">Listas</a></li>
+            <li><a href="#link">Links</a></li>
+            <li><a href="#estilo">Estilizações Adicionais</a></li>
+            <li><a href="#ref">Referências</a></li>
+        </ul>
+        <h2 id="fundamento"> Fundamento do Html </h2>
+        <blockquote style="max-width: 50%; text-align: center;">
+            <mark >"A transformação digital é a integração de tecnologia digital em todas as áreas de um negócio, 
+            mudando fundamentalmente como você opera e entrega valor aos clientes. 
+            Também é uma mudança cultural que exige que as organizações desafiem continuamente o status quo, 
+            experimentem e se sintam confortáveis com a falha."</mark>
+        </blockquote>
+        <p>
+            <abbr title="HyperText Markup Language"> HTML</abbr> é a linguagem de marcação padrão usada para criar e estruturar páginas da web. 
+            Ele fornece a estrutura básica de um site, que é aprimorada e modificada por outras tecnologias como CSS (Cascading Style Sheets) e JavaScript.
+            <br/>Mas, como surgiu o HTML?<br/> O HTML foi criado por Tim Berners-Lee em 1991 enquanto trabalhava no CERN (Organização Europeia para a Pesquisa Nuclear).
+            Ele desenvolveu o HTML como uma maneira de facilitar a troca de documentos científicos entre pesquisadores por meio da World Wide Web.
+            <br/>E o que é a <abbr title="WWW ou Web">World Wide Web</abbr>?<br/> É um sistema de documentos interligados e acessíveis via internet.
+            Conectando clientes e servidores por meio do protocolo HTTP (HyperText Transfer Protocol), assim quando você acessa um site, seu navegador (cliente) envia uma solicitação ao servidor onde o site está hospedado,
+            que então responde enviando os arquivos HTML, CSS e JavaScript necessários para exibir a página em seu navegador.
+        </p>
+        <h2 id="estrutura"> Estrutura Básica  </h2>
+        <p> A estrutura básica de um documento HTML inclui os seguintes elementos principais:</p>
+        <ol>
+            <li><strong>&lt;!DOCTYPE html&gt;:</strong> Declara o tipo de documento e a versão do HTML.</li>
+            <li><strong>&lt;html&gt;:</strong> Elemento raiz que envolve todo o conteúdo da página.</li>
+            <li><strong>&lt;head&gt;:</strong> Contém metadados, links para arquivos CSS, scripts JavaScript e o título da página.</li>
+            <li><strong>&lt;body&gt;:</strong> Contém o conteúdo visível da página, como texto, imagens, links e outros elementos.</li> 
+        </ol>
+
+        <h2 id="tags"> Principais Tags  </h2> 
+        <p> Algumas das tags HTML mais comuns incluem:</p>
+        <ul>
+            <li><strong>&lt;h1&gt; a &lt;h6&gt;:</strong> Cabeçalhos de diferentes níveis. </br> Exemplo: <h1>H1</h1> <h2>H2</h2><h3>H3</h3><h4>H4</h4> <h5>H5</h5><h6>H6</h6></li>
+            <li><strong>&lt;p&gt;:</strong> Parágrafos de texto.</li>
+            <li><strong>&lt;a&gt;:</strong> Links para outras páginas ou recursos.</li>
+            <li><strong>&lt;img&gt;:</strong> Imagens incorporadas na página.</li>
+            <li><strong>&lt;ul&gt; e &lt;ol&gt;:</strong> Listas não ordenadas e ordenadas, respectivamente.</li>
+            <li><strong>&lt;div&gt;:</strong> Contêiner genérico usado para agrupar elementos e aplicar estilos ou scripts.</li>
+        </ul>
+
+        <h2 id="atributo"> Atributos das Tags </h2>
+        <p> Atributos fornecem informações adicionais sobre um elemento HTML. Eles são sempre incluídos na tag de abertura e geralmente vêm em pares nome-valor. Alguns atributos comuns incluem:</p>
+        <ul>
+            <li><strong>href:</strong> Usado na tag &lt;a&gt; para especificar o URL do link.</li>
+            <li><strong>src:</strong> Usado na tag &lt;img&gt; para especificar o caminho da imagem.</li>
+            <li><strong>alt:</strong> Fornece um texto alternativo para imagens, útil para acessibilidade.</li>
+            <li><strong>style:</strong> Permite aplicar estilos CSS diretamente a um elemento.</li>
+            <li><strong>id:</strong> Atribui um identificador único a um elemento, usado para estilização ou manipulação via JavaScript.</li>
+        </ul>
+        <h2 id="texto"> Textos  </h2>
+        <p> No HTML, o texto pode ser formatado usando várias tags, como:</p>
+        <ul>
+            <li><strong>&lt;strong&gt;:</strong> Destaca o texto em negrito.</li>
+            <li><strong>&lt;em&gt;:</strong> Enfatiza o texto em itálico.</li>
+            <li><strong>&lt;mark&gt;:</strong> Destaca o texto com uma cor de fundo.</li>
+            <li><strong>&lt;blockquote&gt;:</strong> Define uma citação em bloco.</li>
+            <li><strong>&lt;abbr&gt;:</strong> Define uma abreviação ou sigla.</li>
+        </ul>
+        <h2 id="lista"> Listas  </h2>
+        <p> Existem dois tipos principais de listas em HTML:</p>
+        <ul>
+            <li><strong>Listas não ordenadas (&lt;ul&gt;):</strong> Usadas para itens que não têm uma ordem específica. Cada item da lista é definido com a tag &lt;li&gt;.</li>
+            <li><strong>Listas ordenadas (&lt;ol&gt;):</strong> Usadas para itens que seguem uma sequência numérica ou alfabética. Cada item da lista também é definido com a tag &lt;li&gt;.</li>
+        </ul>
+        <h2 id="link"> Links  </h2>
+        <p> Links são criados usando a tag &lt;a&gt; (âncora). O atributo href é usado para especificar o destino do link. Exemplo:</p>
+        <pre>
+            &lt;a href="https://www.exemplo.com"&gt;Visite o Exemplo.com&lt;/a&gt;
+        </pre>
+
+        <h2 id="estilo"> Estilizações Adicionais no Html </h2>
+        <p> Embora o HTML seja usado principalmente para estruturar o conteúdo, ele também permite algumas estilizações básicas usando atributos como style. No entanto, para estilizações mais avançadas, é recomendável usar CSS. Exemplo de estilização básica em HTML:</p>
+        <pre>
+            &lt;h1 style="color:blue; text-align:center;"&gt;Título Azul Centralizado&lt;/h1&gt;    
+
+        <h2 id="ref"> Referências </h2>
+        <ul>
+            <li><a href="https://pt.linkedin.com/pulse/transforma%C3%A7%C3%A3o-digital-o-futuro-das-empresas-na-era-da-tecnologia-4qpff" target="_blank" >Citação do inicio da pagina.</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs - HTML</a></li>
+            <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">W3Schools - HTML Tutorial</a></li>
+            <li><a href="https://html.com/" target="_blank" rel="noopener">HTML.com - Learn HTML</a></li>   
+        </ul>
+        <p><sup>*</sup>Desenvolvido por Aline Nepomuceno Fernandes</p>  
+    </body>
+
+</html>
